@@ -87,14 +87,14 @@ namespace InteractiveDataDisplay.WPF
         /// <summary>
         /// Identifies <see cref="IsXAxisReversed"/> dependency property
         /// </summary>
-        public static readonly DependencyProperty IsXAxisReversedProperty =
+        public static new readonly DependencyProperty IsXAxisReversedProperty =
             DependencyProperty.Register("IsXAxisReversed", typeof(bool), typeof(AxisGrid), new PropertyMetadata(false));
 
         /// <summary>
         /// Gets or sets a flag indicating whether the x-axis is reversed or not.
         /// </summary>
         [Category("InteractiveDataDisplay")]
-        public bool IsXAxisReversed
+        public new bool IsXAxisReversed
         {
             get { return (bool)GetValue(IsXAxisReversedProperty); }
             set { SetValue(IsXAxisReversedProperty, value); }
@@ -103,14 +103,14 @@ namespace InteractiveDataDisplay.WPF
         /// <summary>
         /// Identifies <see cref="IsYAxisReversed"/> dependency property
         /// </summary>
-        public static readonly DependencyProperty IsYAxisReversedProperty =
+        public static readonly new DependencyProperty IsYAxisReversedProperty =
             DependencyProperty.Register("IsYAxisReversed", typeof(bool), typeof(AxisGrid), new PropertyMetadata(false));
 
         /// <summary>
         /// Gets or sets a flag indicating whether the y-axis is reversed or not.
         /// </summary>
         [Category("InteractiveDataDisplay")]
-        public bool IsYAxisReversed
+        public new bool IsYAxisReversed
         {
             get { return (bool)GetValue(IsYAxisReversedProperty); }
             set { SetValue(IsYAxisReversedProperty, value); }
